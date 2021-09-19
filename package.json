@@ -1,5 +1,9 @@
 {
   "name": "hero",
+  "engines": {
+    "node": "14.16.0"
+
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
