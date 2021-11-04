@@ -1,6 +1,6 @@
 export const subjectList = [
     {
-        id:'english',
+        id:1,
         subject:"English FAL",
         
         icon:'RiIcons.RiEnglishInput',
@@ -15,7 +15,7 @@ export const subjectList = [
 
     },
     {
-        id:'mathematics',
+        id:2,
         subject:'Mathematics',
         icon:'Ciicons.CgMathDivide',
         grade:
@@ -100,7 +100,7 @@ export const subjectList = [
 
     },
     {
-        id:'life_sciences',
+        id:3,
         subject:'Life Sciences',
         icon:'Fa.FaLeaf',
         grade:[
@@ -111,7 +111,7 @@ export const subjectList = [
     },
 
     {
-        subject:'Afrikaans',
+        subject:4,
         id:'afrikaans',
         icon:'Si.SiAFrame',
         grade:[{grade:'Grade 8',grade_id:'grade_8_afrikaans'},
@@ -122,7 +122,7 @@ export const subjectList = [
 
     },
     {
-        subject:'Physical Sciences',
+        subject:5,
         id:'physical_sciencs',
         icon:'Io.IoFlaskOutline',
         grade:[
@@ -133,7 +133,7 @@ export const subjectList = [
 
     },
     {
-        subject:'Business Studies',
+        subject:6,
         id:'business_studies',
         icon:'Io.IoBusinessOutline',
         grade:[
@@ -144,7 +144,7 @@ export const subjectList = [
 
     },
     {
-        subject:'Computer Application Science',
+        subject:7,
         id:'computer_application_science',
         icon:'Gi.GiComputing',
         grade:[
@@ -155,7 +155,7 @@ export const subjectList = [
 
     },
     {
-        subject:'Information Technology',
+        subject:8,
         id:'information_technology',
         icon:'Gr.GrTechnology',
         grade:[
@@ -166,7 +166,7 @@ export const subjectList = [
 
     },
     {
-        subject:'Accounting',
+        subject:9,
         id:'accounting',
         icon:'Md.MdAccountBalance',
         grade:[
