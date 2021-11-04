@@ -1,27 +1,37 @@
-import subjectList from '../../Components/Lists/ex.json';
-import react from 'react';
+export const getStaticPaths = async () => {
+  const res = await fetch('https://ngnfffasfd.herokuapp.com/edu_cntr');
+  const data = await res.json();
 
- fetch("../../Components/Lists/ex.json").then(function(resp){
-        return resp.json();
-    }).then(function(data) {
-        console.log(data);
+  const paths = data.map(item => {
+    return {
+      params: { id: item.id.charToArray }
+    }
+  })
 
-    })
-
-
-const Details = () => { 
-    
-
-    return (
-       <div>
-        <h1></h1>
-       
-      </div>
-    );
+  return {
+    paths,
+    fallback: false
   }
-  
-  export default Details;
+}
 
+export const getStaticProps = async (context) => {
+  const id = context.params.id;
+  const res = await fetch('https://ngnfffasfd.herokuapp.com/edu_cntr/' + id);
+  const data = await res.json();
 
+  return {
+    props: { school: data }
+  }
+}
 
+const Details = ({ item }) => {
+  return (
+    <div>
+      <h1>{ item.subject}</h1>
+     
+      
+    </div>
+  );
+}
 
+export default Details;
